@@ -1,0 +1,71 @@
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('./fonts/Montserrat-Medium.eot');
+  src: url('./fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Montserrat-Medium.ttf') format('truetype'),
+       url('./fonts/Montserrat-Medium.woff') format('woff'),
+       url('./fonts/Montserrat-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  src: url('./fonts/KaushanScript-Regular.eot');
+  src: url('./fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/KaushanScript-Regular.ttf') format('truetype'),
+       url('./fonts/KaushanScript-Regular.woff') format('woff'),
+       url('./fonts/KaushanScript-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Montserrat-Medium !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title {
+  font-family: 'KaushanScript-Regular';
+}
+
+.text-blue {
+  color: var(--mainBlue);
+}
+
+.text-bright {
+  color: var(--lightBlue);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+  cursor: pointer;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+  transition: 300ms ease-in-out;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
